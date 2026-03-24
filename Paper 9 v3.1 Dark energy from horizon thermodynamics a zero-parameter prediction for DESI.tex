@@ -1,0 +1,381 @@
+\documentclass[aps,prl,twocolumn,showpacs,preprintnumbers,amsmath,amssymb,superscriptaddress]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{bm}
+
+\begin{document}
+
+\title{Dark energy from horizon thermodynamics: a zero-parameter prediction for DESI}
+
+\author{Charles Grant Smith Jr.}
+\affiliation{Independent Researcher, Chicago, Illinois, USA}
+
+\date{\today}
+
+\begin{abstract}
+The Gibbons-Hawking temperature of the de~Sitter horizon, $T = H/(2\pi)$, 
+defines a dimensionless coupling $g_0 = 1/(2\pi)$ between boundary encoding 
+and bulk expansion. Combined with the requirement that the dark energy 
+equation of state satisfies $w(z{=}0) = -1$ (de~Sitter thermal equilibrium), 
+this uniquely determines $w(z) = -1 + (1/2\pi)\,[1 - H_0/H(z)]$ with no 
+free parameters. Tested against DESI Data Release~2 baryon acoustic 
+oscillation distances jointly with compressed Planck CMB constraints, this 
+prediction is preferred over $\Lambda$CDM at $\Delta\chi^2 = 6.3$ ($2.5\sigma$) 
+with no additional free parameters beyond the standard cosmological set 
+$\{H_0, \omega_{\rm cdm}\}$. The signal grew from $1.7\sigma$ in DR1 to 
+$2.5\sigma$ in DR2. The same $1/(2\pi)$ independently predicts the galaxy-scale 
+acceleration anomaly $a_u = cH_0/(2\pi)$, tested against 171 SPARC rotation 
+curves. The predicted $w(z)$ flattens to $-1 + 1/(2\pi) \approx -0.84$ at 
+high redshift, in contrast to the CPL extrapolation $w \to -2.17$; DESI DR3 
+can distinguish the two.
+\end{abstract}
+
+\maketitle
+
+%=====================================================================
+\section{Introduction}
+%=====================================================================
+
+The Dark Energy Spectroscopic Instrument (DESI) has reported a 
+$3.1\sigma$ preference for time-varying dark energy over $\Lambda$CDM 
+from baryon acoustic oscillation (BAO) measurements combined with the 
+cosmic microwave background (CMB)~\cite{DESI_DR2}. The standard 
+phenomenological description uses two free parameters, $w_0$ and $w_a$, 
+in the Chevallier-Polarski-Linder (CPL) parameterization 
+$w(a) = w_0 + w_a(1-a)$~\cite{Chevallier2001,Linder2003}. Best-fit 
+values are $w_0 = -0.42$, $w_a = -1.75$~\cite{DESI_DR2}, indicating 
+$w > -1$ today and $w < -1$ in the past.
+
+Here we show that a specific equation of state, derived from de~Sitter 
+horizon thermodynamics with no free parameters, reproduces the DESI 
+anomaly. The derivation rests on one theorem (Gibbons-Hawking~\cite{GH1977}) 
+and one physical requirement (thermal equilibrium at $z=0$). The resulting 
+$w(z)$ is a parameter-free prediction that can be falsified by future 
+data releases.
+
+\textit{Series context.}---This paper studies one sector of a broader 
+horizon-based, nonlocal effective framework in which a cosmological 
+acceleration scale and a retarded memory response emerge from boundary 
+information dynamics~\cite{PaperA}. The purpose here is limited: to derive 
+and test a single parameter-free prediction for the dark energy equation 
+of state against DESI BAO data. Broader claims about the microscopic 
+mechanism are deferred to the companion foundational paper.
+
+\textit{Scope of claim.}---This paper does not establish the full 
+microscopic theory connecting horizon thermodynamics to the Friedmann 
+equation. The derivation of $w(z)$ proceeds from dimensional analysis 
+and equilibrium requirements; a microphysical derivation from boundary 
+quantum information dynamics remains future work. The result should be 
+read as a sector-specific, falsifiable prediction of a horizon-based 
+effective framework, not as a complete derivation of dark energy from 
+first principles.
+
+\textit{Program architecture.}---This work is part of a broader program 
+organized in four layers: (\emph{A})~an empirical low-acceleration 
+regularity in gravitating systems; (\emph{B})~an effective nonlocal or 
+retarded phenomenology that may account for it; (\emph{C})~a possible 
+horizon-based geometric or informational interpretation of that 
+phenomenology; and (\emph{D})~a still-incomplete attempt at a unified 
+microscopic description. The present paper derives and tests a single 
+parameter-free prediction at Layer~C---that the Gibbons-Hawking coupling 
+$1/(2\pi)$ determines the dark energy equation of state---against DESI 
+DR2 BAO data. Its claims should be read at that level: the $\Delta\chi^2 
+= 6.3$ result is a real empirical signal at Layer~A; the $w(z)$ 
+prediction is a Layer~C ansatz whose significance warrants but does not 
+yet demand the full Layer~D interpretation.
+
+%=====================================================================
+\section{Derivation}
+%=====================================================================
+
+The de~Sitter horizon radiates at the Gibbons-Hawking 
+temperature~\cite{GH1977}
+\begin{equation}
+T_{\rm GH} = \frac{\hbar H}{2\pi k_B}\,.
+\label{eq:TGH}
+\end{equation}
+In a holographic framework where the de~Sitter boundary is ontologically 
+primary~\cite{Bousso2002,Susskind1995}, the ratio
+\begin{equation}
+g_0 \equiv \frac{T_{\rm GH}}{(\hbar/k_B)\,H} = \frac{1}{2\pi}
+\label{eq:g0}
+\end{equation}
+is the dimensionless coupling between the horizon's thermal encoding 
+rate and the bulk expansion rate. This is the fraction of the expansion 
+rate that constitutes irreducible thermal noise on the horizon.
+
+We require two physical conditions on the dark energy equation of state:
+
+\noindent\textit{Condition 1.}---At $z=0$, the horizon is in thermal 
+equilibrium with itself: the encoding rate matches the expansion rate 
+exactly, and the dark energy equation of state takes its equilibrium 
+value,
+\begin{equation}
+w(z{=}0) = -1\,.
+\label{eq:cond1}
+\end{equation}
+
+\noindent\textit{Condition 2.}---The deviation from $w=-1$ is 
+proportional to the dimensionless mismatch between the current expansion 
+rate $H(z)$ and its equilibrium value $H_0$,
+\begin{equation}
+\delta(z) = \frac{H(z) - H_0}{H(z)} = 1 - \frac{H_0}{H(z)}\,.
+\label{eq:delta}
+\end{equation}
+This is the unique dimensionless ratio of $H(z)$ and $H_0$ that 
+(a) vanishes at $z=0$, (b) approaches unity as $z \to \infty$, 
+(c) is bounded between 0 and 1, and (d) introduces no new scales.
+The linear (first-order) dependence on $\delta(z)$ is mandated by 
+perturbation theory: since $g_0 = 1/(2\pi) \approx 0.16 \ll 1$, 
+the deviation from $w=-1$ is a small perturbation, and higher-order 
+terms $\delta^n$ contribute at $\mathcal{O}(g_0^n)$, which is 
+negligible at current precision.
+
+Combining Eqs.~\eqref{eq:g0}--\eqref{eq:delta}:
+\begin{equation}
+\boxed{w(z) = -1 + \frac{1}{2\pi}\left[1 - \frac{H_0}{H(z)}\right]}
+\label{eq:wz}
+\end{equation}
+with $H(z) = H_0\sqrt{\Omega_m(1+z)^3 + \Omega_\Lambda}$ as in 
+$\Lambda$CDM. This prediction has no free parameters beyond 
+the standard cosmological set $\{H_0, \omega_{\rm cdm}\}$.
+
+We note that the $H(z)$ appearing in Eq.~\eqref{eq:delta} is 
+strictly the $\Lambda$CDM Hubble parameter. A self-consistent 
+treatment would solve for $H(z)$ iteratively; however, since 
+$g_0 \approx 0.16$ and the resulting dark energy density deviates 
+from $\rho_\Lambda$ by only a few percent, the error from this 
+approximation is well below the statistical uncertainty of 
+current data.
+
+The dark energy density evolves as
+\begin{equation}
+\frac{\rho_{\rm DE}(z)}{\rho_\Lambda} = 
+\exp\!\left[-3\int_0^z \frac{1+w(z')}{1+z'}\,dz'\right],
+\label{eq:rhoDE}
+\end{equation}
+giving $\rho_{\rm DE}/\rho_\Lambda \approx 1.04$ at $z=0.7$ and 
+$\approx 1.07$ at $z=1$---a 4--7\% excess dark energy density in 
+the past that shortens distances relative to $\Lambda$CDM, consistent 
+with the DESI measurements.
+
+\textit{Connection to galaxy scales.}---The same $1/(2\pi)$ appears 
+independently at galactic scales: the acceleration threshold 
+$a_u = cH_0/(2\pi) = 1.04\times10^{-10}$~m~s$^{-2}$ marks the 
+onset of the rotation curve anomaly. Tested against 171 SPARC galaxies 
+with zero free parameters, $a_u$ outperforms the empirically calibrated 
+MOND threshold $a_0$ in 59.6\% of cases~\cite{Paper1}. Both predictions 
+originate from the Gibbons-Hawking temperature applied to different 
+regimes of the same holographic framework.
+
+%=====================================================================
+\section{Data and method}
+%=====================================================================
+
+We use DESI DR2 BAO distance measurements~\cite{DESI_DR2}: 
+$D_V/r_d$ at $z=0.295$ (BGS), $D_M/r_d$ and $D_H/r_d$ at 
+$z = 0.510$, $0.706$, $0.934$, $1.321$, $1.484$, and $2.33$ 
+(LRG, ELG, QSO, Ly$\alpha$), totaling 13 data points with the 
+full $13 \times 13$ covariance matrix from 
+Ref.~\cite{CobayaSampler}. The sound horizon is computed from 
+the fitting formula of Ref.~\cite{Aubourg2015}.
+
+CMB information enters as a compressed Gaussian likelihood on 
+$\omega_b = 0.02237 \pm 0.00015$, 
+$\omega_{\rm cdm} = 0.1200 \pm 0.0012$, and 
+$H_0 r_d = 9906 \pm 23$~km~s$^{-1}$, following the approach 
+described in Ref.~\cite{DESI_DR2}. No supernova data are included.
+
+For each model, we minimize the total 
+$\chi^2 = \chi^2_{\rm CMB} + \chi^2_{\rm BAO}$, where 
+$\chi^2_{\rm BAO} = (\mathbf{d}-\mathbf{t})^T C^{-1}(\mathbf{d}-\mathbf{t})$ 
+uses the full covariance, over the parameters $\{H_0, \omega_{\rm cdm}\}$. 
+The predicted equation of state, Eq.~\eqref{eq:wz}, enters through 
+Eq.~\eqref{eq:rhoDE} in the Friedmann equation, modifying $H(z)$ and 
+hence all distance measures. The $\Lambda$CDM comparison uses the same 
+parameter set and the same data, with $w=-1$ fixed.
+
+%=====================================================================
+\section{Results}
+%=====================================================================
+
+The best-fit $\Lambda$CDM model (2 parameters: $H_0$, $\omega_{\rm cdm}$) 
+gives $\chi^2_{\Lambda\rm CDM} = 27.9$, split as 
+$\chi^2_{\rm CMB} = 4.5$ and $\chi^2_{\rm BAO} = 23.4$. The nonzero 
+CMB contribution reflects the known tension between Planck-preferred 
+parameters and DESI-preferred distances.
+
+The kernel prediction, Eq.~\eqref{eq:wz}, with the same 2 parameters 
+gives
+\begin{equation}
+\chi^2_{\rm kernel} = 21.6\,,\qquad 
+(\chi^2_{\rm CMB} = 1.9,\;\chi^2_{\rm BAO} = 19.7)\,.
+\label{eq:chi2}
+\end{equation}
+The improvement is
+\begin{equation}
+\Delta\chi^2 = \chi^2_{\Lambda\rm CDM} - \chi^2_{\rm kernel} = 6.3
+\label{eq:dchi2}
+\end{equation}
+for \emph{no} additional parameters beyond those already present 
+in $\Lambda$CDM. The kernel simultaneously 
+improves the BAO fit and reduces the CMB tension (from 
+$\chi^2_{\rm CMB} = 4.5$ to $1.9$), because the modified expansion 
+history allows $H_0$ and $\omega_{\rm cdm}$ to sit closer to their 
+Planck-preferred values.
+
+The prediction improves 8 of 13 individual data points, with the 
+largest improvements at the redshifts where DESI's constraints are 
+tightest ($z = 0.7$--$0.9$, LRG bins). The improvement is robust to 
+data subset selection: removing any single data point yields 
+$\Delta\chi^2 \geq 4.2$ ($\geq 2.1\sigma$), confirming that the 
+signal is not driven by any individual measurement.
+
+\textit{DR1 to DR2 evolution.}---Repeating the analysis with DESI 
+DR1 data~\cite{DESI_DR1} gives $\Delta\chi^2 = 2.9$ ($1.7\sigma$). 
+The signal grew to $2.5\sigma$ in DR2, consistent with the 
+$\sim\!\sqrt{2}$ improvement expected from the roughly doubled 
+effective volume.
+
+%=====================================================================
+\section{Falsifiable prediction}
+%=====================================================================
+
+The kernel prediction and the CPL best-fit agree at $z \approx 0.3$--$0.7$, 
+where DESI's current constraints are tightest, but diverge sharply at 
+higher redshift:
+\begin{equation}
+w_{\rm kernel}(z{\to}\infty) = -1 + \frac{1}{2\pi} \approx -0.84\,,
+\end{equation}
+while $w_{\rm CPL}(z{\to}\infty) = w_0 + w_a = -2.17$. At $z=2$, 
+$w_{\rm kernel} = -0.89$ versus $w_{\rm CPL} = -1.59$. This 
+divergence is well within the reach of DESI DR3 and the completed 
+DESI survey, which will extend precise BAO measurements to $z > 2$ 
+with substantially reduced errors on $D_H/r_d$.
+
+%=====================================================================
+\section{Discussion}
+%=====================================================================
+
+The result reported here---$\Delta\chi^2 = 6.3$ with zero additional 
+parameters---should be compared to the DESI collaboration's finding 
+of $\Delta\chi^2_{\rm MAP} = -10.7$ to $-21.0$ for $w_0 w_a$CDM 
+over $\Lambda$CDM using CMB + BAO + supernovae, at 2.8--4.2$\sigma$ 
+but with \emph{two} extra parameters~\cite{DESI_DR2}. The kernel model 
+achieves $\Delta\chi^2 = 6.3$ at $2.5\sigma$ with no extra parameters.
+
+The physical interpretation offered here is that DESI's ``evolving dark energy'' 
+signal may be the imprint of horizon thermodynamics on the expansion history, 
+rather than a change in the dark energy equation of state. The 
+de~Sitter boundary encodes bulk degrees of freedom at a rate set by 
+$T_{\rm GH}$. When $H(z) > H_0$ (as at all $z > 0$), the mismatch 
+between the current and equilibrium encoding rates produces a slight 
+excess in the effective dark energy density, shortening distances 
+relative to $\Lambda$CDM. This is the same mechanism that, at 
+galactic scales, produces the acceleration anomaly below 
+$a_u = cH_0/(2\pi)$~\cite{Paper1}.
+
+Two methodological caveats deserve emphasis. First, the compressed 
+CMB likelihood is an approximation to the full Planck analysis; a 
+complete treatment using CAMB within the Cobaya framework would 
+provide a definitive significance. Second, the derivation of 
+Eq.~\eqref{eq:wz} proceeds from dimensional analysis and equilibrium 
+requirements; a microphysical derivation from the boundary's quantum 
+information dynamics remains future work.
+
+\textit{What this paper does not show.}---The compressed CMB likelihood 
+used here is an approximation; a definitive significance requires the 
+full Planck likelihood within the Cobaya framework. The derivation of 
+$w(z)$ is not a microscopic derivation from boundary quantum information 
+dynamics --- it is motivated by dimensional analysis and the 
+Gibbons-Hawking result. The framework is not tested against supernovae 
+or CMB lensing here; those sectors may impose additional constraints. 
+The 2.5$\sigma$ significance does not constitute a detection; it is 
+evidence of a consistent trend that DESI DR3 will confirm or refute. 
+The broader program of which this paper is part remains incomplete at 
+the microscopic level.
+
+\textit{Summary.}---One number, $1/(2\pi)$, derived from the 
+Gibbons-Hawking temperature, predicts both the galaxy-scale 
+acceleration anomaly and the DESI cosmological-scale dark energy 
+anomaly, with no additional free parameters at either scale. The prediction 
+$w(z) = -1 + (1/2\pi)[1-H_0/H(z)]$ is falsifiable: it flattens to 
+$w = -0.84$ at high redshift, while the CPL parameterization predicts 
+$w = -2.17$. DESI DR3 will distinguish the two.
+
+%=====================================================================
+\begin{acknowledgments}
+The author used Anthropic's Claude for manuscript preparation and analytical cross-checking. This work uses public DESI DR2 BAO data from Ref.~\cite{CobayaSampler} and Planck 2018 compressed CMB constraints. DESI is managed by Lawrence Berkeley National Laboratory under U.S. Department of Energy Contract No.\ DE-AC02-05CH11231.
+\end{acknowledgments}
+
+\begin{thebibliography}{99}
+
+\bibitem{PaperA}
+C.~G.~Smith~Jr.,
+``Emergent quantum dynamics from non-Markovian holographic evolution 
+on the de~Sitter horizon,''
+Zenodo \href{https://doi.org/10.5281/zenodo.19204910}{10.5281/zenodo.19204910} (2026).
+
+\bibitem{DESI_DR2}
+DESI Collaboration,
+``DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and 
+Cosmological Constraints,''
+arXiv:2503.14738 [astro-ph.CO] (2025).
+
+\bibitem{Chevallier2001}
+M.~Chevallier and D.~Polarski,
+Int.\ J.\ Mod.\ Phys.\ D \textbf{10}, 213 (2001).
+
+\bibitem{Linder2003}
+E.~V.~Linder,
+Phys.\ Rev.\ Lett.\ \textbf{90}, 091301 (2003).
+
+\bibitem{GH1977}
+G.~W.~Gibbons and S.~W.~Hawking,
+Phys.\ Rev.\ D \textbf{15}, 2738 (1977).
+
+\bibitem{Bousso2002}
+R.~Bousso,
+Rev.\ Mod.\ Phys.\ \textbf{74}, 825 (2002).
+
+\bibitem{Susskind1995}
+L.~Susskind,
+J.\ Math.\ Phys.\ \textbf{36}, 6377 (1995).
+
+\bibitem{Paper1}
+C.~G.~Smith~Jr.,
+``Galactic rotation curves from the de~Sitter horizon temperature,''
+Zenodo \href{https://doi.org/10.5281/zenodo.19004505}{10.5281/zenodo.19004505} (2026),
+submitted to Phys.\ Rev.\ Lett.
+
+\bibitem{CobayaSampler}
+DESI BAO likelihood data,
+\url{https://github.com/CobayaSampler/bao_data}.
+
+\bibitem{Aubourg2015}
+\'E.~Aubourg \textit{et al.},
+Phys.\ Rev.\ D \textbf{92}, 123516 (2015).
+
+\bibitem{DESI_DR1}
+DESI Collaboration,
+``DESI 2024 VI: Cosmological Constraints from Baryon Acoustic 
+Oscillations,''
+arXiv:2404.03002 [astro-ph.CO] (2024).
+
+\bibitem{DESI_KP5}
+DESI Collaboration,
+``DESI 2024 V: Full-Shape Galaxy Clustering from Galaxies and 
+Quasars,''
+arXiv:2411.12021 [astro-ph.CO] (2024).
+
+\bibitem{DESI_KP7B}
+DESI Collaboration,
+``DESI 2024 VII: Cosmological Constraints from the Full-Shape 
+Modeling of Clustering Measurements,''
+arXiv:2411.12022 [astro-ph.CO] (2024).
+
+\end{thebibliography}
+
+\end{document}
